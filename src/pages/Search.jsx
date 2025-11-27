@@ -10,6 +10,10 @@ placeholder="Search tracks..."
 value={query}
 onChange={e => setQuery(e.target.value)}
 />
+
+<div className="">
+{results.map(song => <SongCard key={song.id} song={song} />)}
+</div>
     </div>
 )
 }
