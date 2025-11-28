@@ -1,10 +1,14 @@
 import React from 'react'
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { getUserPlaylists } from '../api/spotify'
 import PlaylistCard from '../components/PlaylistCard'
 
-export default function PlayList () {
+export default function Playlist () {
     const [list, setList] = useState([])
+
+useEffect(() => {
+getUserPlaylists().then(res => setList(res))
+}, [])
   return (
     <div>
       <h2 className="">Your Playlists</h2>
