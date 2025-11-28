@@ -5,7 +5,10 @@ const [name, setName] = useState('')
 const [desc, setDesc] = useState('')
 const [status, setStatus] = useState('')
 const userId = localStorage.getItem('spotify_user_id')
-  return (
+   function submit() {
+createPlaylist(userId, name, desc).then(() => setStatus('Playlist created!'))
+}
+return (
     <div>
 <h2 className="">Create Playlist</h2>
 <input className="" placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
