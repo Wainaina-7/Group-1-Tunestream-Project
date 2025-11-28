@@ -6,6 +6,7 @@ import Search from './pages/Search'
 import Playlists from './pages/Playlist'
 import CreatePlaylist from './pages/CreatePlaylist'
 import Login from './pages/Login'
+import './App.css';
 
 export default function App() {
 return (
