@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Header from './components/Header'
+import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Search from './pages/Search'
 import Playlists from './pages/Playlist'
@@ -11,7 +11,7 @@ import './App.css';
 export default function App() {
 return (
 <div className="min-h-screen bg-gray-900 text-white">
-<Header />
+<Navbar />
 <div className="p-6 max-w-5xl mx-auto">
 <Routes>
 <Route path="/" element={<Home />} />
