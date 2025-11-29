@@ -10,9 +10,9 @@ useEffect(() => {
 getUserPlaylists().then(res => setList(res))
 }, [])
   return (
-    <div>
-      <h2 className="">Your Playlists</h2>
-<div className="">
+    <div className = "p-6">
+      <h2 className="text-3xl font-bold mb-6 text-white">Your Playlists</h2>
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 {list.map(pl => <PlaylistCard key={pl.id} playlist={pl} />)}
 </div>
     </div>

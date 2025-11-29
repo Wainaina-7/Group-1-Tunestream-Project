@@ -10,9 +10,9 @@ import './App.css';
 
 export default function App() {
 return (
-<div className="">
+<div className="min-h-screen bg-gray-900 text-white">
 <Header />
-<div className="">
+<div className="p-6 max-w-5xl mx-auto">
 <Routes>
 <Route path="/" element={<Home />} />
 <Route path="/search" element={<Search />} />
