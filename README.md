@@ -155,6 +155,12 @@ Displays track name + artist with Tailwind styling.
 
 Displays playlist name + description.
 
+## Tailwind CSS:
+- Added tailwind 3.41 for to style our app by running the command npm install -D tailwindcss@3 postcss autoprefixer to install it.
+- Ran the command npx tailwindcss init -p to initialize it.
+- Added all the paths to all of our template files in tailwind.config.js.
+- Added @tailwind base, @tailwind components, @tailwind utilities to the index.css file and started using it to style the pages and components
+
 ## Installation & Setup
 - Created a react app using vite by running npm create vite@latest tunestream -- -- template react and accepting the subsequent commands.
 - Launched the app on visual studio code by running cd tunestream then code tunestream.

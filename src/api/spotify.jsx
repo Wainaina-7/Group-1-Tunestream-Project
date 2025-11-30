@@ -1,6 +1,5 @@
 const BASE = 'https://api.spotify.com/v1'
 
-
 function authHeader() {
 return { Authorization: `Bearer ${localStorage.getItem('access_token')}` }
 }
@@ -10,10 +9,7 @@ export function searchTracks(query) {
 return fetch(`${BASE}/search?q=${query}&type=track&limit=12`, {
 headers: authHeader()
 })
- .then(res => {
-    if (!res.ok) throw new Error(`Spotify API error: ${res.status}`);
-    return res.json();
-  })
+.then(res => res.json())
 .then(data => data.tracks.items)
 }
 
