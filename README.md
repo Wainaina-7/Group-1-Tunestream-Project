@@ -52,7 +52,7 @@ tunestream
 │── README.md
 
 ## Application Routes
-Route	      Page/compoment                   Description
+Route	      Page/component                   Description
 /	            Home	                            Landing page
 /search	      Search	                         Search songs via Spotify API
 /playlists	 Playlist	                         Display user's Spotify playlists
